@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление бронирования - Фортуна2</title>
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Фортуна2">
+                    <span>Фортуна2</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Главная</a></li>
+                        <li><a href="search.html">Поиск</a></li>
+                        <li><a href="booking.html">Бронирование</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </header>
+
+    <!-- Бронирования -->
+
+    <section class="booking-section">
+        <h2 class="h2-booking">Бронирование</h2>
+            
+        <form class="booking-form">
+            <div class="form-section">
+                <h2>Данные о заказе</h2>
+                
+                <div class="order-details">
+                    <h3>Ваши данные</h3>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Регион:</span>
+                        <span class="detail-value">Азия</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Маршрут:</span>
+                        <span class="detail-value">Райский отдых на Мальдивах</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Дата отдыха:</span>
+                        <span class="detail-value">15.07.2025 - 25.07.2025</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Количество человек:</span>
+                        <span class="detail-value">2 взрослых</span>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="form-section">
+                <h2>Дополнительные услуги</h2>
+                    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="guide">
+                    <label for="guide">Услуги проводника (+5 000 ₽)</label>
+                </div>
+                    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="equipment">
+                    <label for="equipment">Аренда туристического оборудования (+3 000 ₽)</label>
+                </div>
+                    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="photographer">
+                    <label for="photographer">Услуги фотографа (+8 000 ₽)</label>
+                </div>
+                    
+                <div class="checkbox-group">
+                    <input type="checkbox" id="insurance">
+                    <label for="insurance">Страхование от несчастных случаев (+2 000 ₽)</label>
+                </div>
+
+                <br>
+                    
+                <div class="form-group">
+                    <label for="comment">Дополнительный комментарий</label>
+                    <br>
+                    <textarea id="comment" placeholder="  Ваш комментарий" rows="3"></textarea>
+                </div>
+            </div>
+                
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="email">Email для подтверждения</label>
+                    <input type="email" id="email" required placeholder="Ваш e-mail">
+                    <label for="tel">Телефон для связи</label>
+                    <input type="tel" id="tel" required placeholder="Ваш телефон">
+                </div>
+            </div>
+                
+            <div class="total-price"> Итоговая стоимость: <span id="total">0</span> ₽ </div>
+                
+            <button type="submit" class="submit-btn">Оформить бронирование</button>
+        </form>
+    </section>
+
+    
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Фортуна2">
+                    <span>Фортуна2</span>
+                </div>
+                <div class="footer-column">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="search.html">Поиск</a></li>
+                            <li><a href="booking.html">Бронирование</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-column">
+                    <ul>
+                        <li>Телефон: +7(812) XXX-XX-XX</li>
+                        <li>Email: info@fortuna2.ru</li>
+                        <li>Адрес: г. Санкт-Петербург, Руставелли пр. 100</li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <div class="footer-social-icons">
+                        <a href="https://www.tiktok.com/"><img src="img/icons8-tik-tok-48.png" alt="tictoc"></a>
+                        <a href="instagram.com"><img src="img/icons8-instagram-48.png" alt="inst"></a>
+                        <a href="https://x.com/twitter"><img src="img/icons8-twitter-bird-48.png" alt="twitter"></a>
+                        <a href="https://www.youtube.com/"><img src="img/icons8-youtube-48.png" alt="youtube"></a>
+                    </div>
+                    <p>© 2025 Туристическая компания "Фортуна2"</p>
+                </div>
+                    
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

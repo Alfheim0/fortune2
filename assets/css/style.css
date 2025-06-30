@@ -1,0 +1,386 @@
+/* @import  */
+
+/* Общие стили */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+/* Шапка сайта */
+.header {
+    background: url('../img/maldives7-kurortnic-1536x864.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px 0;
+    height: 700px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #e74c3c;
+}
+
+
+/* Форма поиска */
+.search-form {
+    max-width: 800px;
+    margin: 100px auto 50px;
+    text-align: center;
+}
+
+.search-form h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.search-form form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.form-group label {
+    color: #2c3e50;
+}
+
+.form-group select, 
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-btn {
+    background: #e74c3c;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    grid-column: 1 / -1;
+    margin: 0 auto;
+}
+
+.search-form a{
+    color: #ffffff;
+}
+
+.search-btn:hover {
+    background: #c0392b;
+}
+
+/* Секция шагов бронирования */
+
+
+.booking-steps h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.booking-steps {
+  padding: 40px 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step {
+  width: 170px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.step-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+
+/* Секция о компании */
+.about {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.about-item {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Секция отзывов */
+.reviews {
+    padding: 80px 0;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.reviews h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #2c3e50;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.review {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+/* Подписка */
+.subscribe {
+    padding: 60px 0;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.subscribe h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.subscribe p {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.subscribe-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    padding: 15px;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+    border-color: #2c3e50;
+    border-radius: 5px;
+}
+
+.subscribe-form button {
+    padding: 15px 30px;
+    background: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    cursor: pointer;    
+    border-radius: 5px;
+}
+
+.subscribe-form button:hover {
+    background: #c0392b;
+}
+
+/* подвал */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-logo span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #e74c3c;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+}
+
+.footer-social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}

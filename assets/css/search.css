@@ -1,0 +1,253 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+/* Шапка сайта */
+.header {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-left: 30px;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav ul li a:hover {
+    color: #e74c3c;
+}
+
+
+/* Результаты поиска */
+.search-results {
+    padding: 30px 0;
+    background-color: #f9f9f9;
+}
+
+.search-results h1 {
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.routes-list {
+    display: grid;
+    gap: 30px;
+    margin: 20px 0;
+    grid-template-columns: 1fr 1fr;
+}
+
+.route-card {
+    border: 1px solid #e74c3c;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+}
+
+.route-image {
+    height: 180px;
+}
+
+.route-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.route-info {
+    padding: 15px;
+}
+
+.route-header h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.route-meta {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.route-description {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.route-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.route-footer a{
+    color: #ffffff;
+}
+
+.route-price .price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.book-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.book-btn:hover {
+    background: #c0392b;
+}
+
+/* подвал */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-logo span {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    display: inline;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: #e74c3c;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social-icons a {
+    display: inline-block;
+}
+
+.footer-social-icons img {
+    width: 32px;
+    height: 32px;
+}
+
+.footer p {
+    text-align: center;
+    padding-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+}

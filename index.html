@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фортуна2 - туристическая компания</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Фортуна2">
+                    <span>Фортуна2</span>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="assets/search.html">Поиск</a></li>
+                        <li><a href="assets/booking.html">Бронирование</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Форма поиска -->
+            <div class="search-form">
+                <h1>Найдите идеальный тур для отдыха</h1>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="region">Регион</label>
+                        <select id="region" name="region">
+                            <option value="">Выберите регион</option>
+                            <option value="europe">Европа</option>
+                            <option value="asia">Азия</option>
+                            <option value="america">Америка</option>
+                            <option value="africa">Африка</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dates">Дата отдыха</label>
+                        <input type="date" id="dates" name="dates">
+                    </div>
+                    <div class="form-group">
+                        <label for="participants">Количество участников</label>
+                        <input type="number" id="participants" name="participants" min="1" value="1">
+                    </div>
+                    <a href="assets/search.html" class="search-btn">Поиск</a>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Секция алгоритма бронирования -->
+    <section class="booking-steps">
+        <h2>Как забронировать тур</h2>
+        <div class="container">
+            
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="" alt="step-icon">
+                    </div>
+                    <h3>1. Дата</h3>
+                    <p>Выберите даты предполагаемого отдыхаога</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="" alt="step-icon">
+                    </div>
+                    <h3>2. Участники</h3>
+                    <p>Укажите количество участников и их уровень подготовки</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="" alt="step-icon">
+                    </div>
+                    <h3>3. Поиск</h3>
+                    <p>Выберите желаемое место для отдыха</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="" alt="step-icon">
+                    </div>
+                    <h3>4. Резервация</h3>
+                    <p>Зарезервируйте зоны для посещения</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="" alt="step-icon">
+                    </div>
+                    <h3>5. Услуги</h3>
+                    <p>Определите перечень обязательных услуг</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <img src="" alt="step-icon">
+                    </div>
+                    <h3>6. Оформление</h3>
+                    <p>Оформите заказ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция о компании -->
+    <section class="about">
+        <div class="container">
+            <h2>О компании</h2>
+            <div class="about-content">
+                <div class="about-item">
+                    <h3>Наша цель</h3>
+                    <p>Сделать любой отдых удобным, комфортным и безопасным.</p>
+                </div>
+                <div class="about-item">
+                    <h3>О нас</h3>
+                    <p>Туристическая компания предоставляет эксклюзивный комплекс услуг на первоклассном уровне: от организации путешествий и мероприятий разных форматов от корпоративного обслуживания. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция отзывов -->
+    <section class="reviews">
+        <div class="container">
+            <h2>Отзывы наших клиентов</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <div class="review-author">
+                        <img src="assets/img/uxer2.jpg" alt="Иван Петров">
+                        <h4>Иван Петров</h4>
+                    </div>
+                    <div class="review-text">
+                        <p>Отличный сервис! Все организовано на высшем уровне. Спасибо за незабываемый отдых в Италии!</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-author">
+                        <img src="assets/img/user1.jpg" alt="Елена Смирнова">
+                        <h4>Елена Смирнова</h4>
+                    </div>
+                    <div class="review-text">
+                        <p>Впервые воспользовались услугами "Фортуна2" и остались очень довольны. Тур в Таиланд превзошел все ожидания!</p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="review-author">
+                        <img src="assets/img/user3.webp" alt="Елена Смирнова">
+                        <h4>Павел Дуров</h4>
+                    </div>
+                    <div class="review-text">
+                        <p>Замечательная компания, на высшем уровне. Франция порадовала. Рекомендую.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe">
+        <div class="container">
+            <h2>Подпишитесь на наши новости</h2>
+            <p>Получайте первыми информацию о горящих турах и специальных предложениях</p>
+            <form class="subscribe-form" action="#" method="post">
+                <input type="email" placeholder="Ваш email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-logo">
+                    <img src="assets/img/logo.png" alt="Фортуна2">
+                    <span>Фортуна2</span>
+                </div>
+                <div class="footer-column">
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="assets/search.html">Поиск</a></li>
+                            <li><a href="assets/booking.html">Бронирование</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-column">
+                    <ul>
+                        <li>Телефон: +7(812) XXX-XX-XX</li>
+                        <li>Email: info@fortuna2.ru</li>
+                        <li>Адрес: г. Санкт-Петербург, Руставелли пр. 100</li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <div class="footer-social-icons">
+                        <a href="https://www.tiktok.com/"><img src="assets/img/icons8-tik-tok-48.png" alt="tictoc"></a>
+                        <a href="instagram.com"><img src="assets/img/icons8-instagram-48.png" alt="inst"></a>
+                        <a href="https://x.com/twitter"><img src="assets/img/icons8-twitter-bird-48.png" alt="twitter"></a>
+                        <a href="https://www.youtube.com/"><img src="assets/img/icons8-youtube-48.png" alt="youtube"></a>
+                    </div>
+                    <p>© 2025 Туристическая компания "Фортуна2"</p>
+                </div>
+                    
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
